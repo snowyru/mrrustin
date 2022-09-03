@@ -5,14 +5,6 @@ import { useEffect } from "react";
 
 const NotFound = () => {
 
-    const router = useRouter();
-
-    useEffect( () => {
-        setTimeout( () => {
-            router.push("/");
-        }, 5000)
-    }, [])
-
     return ( 
        
         <div className="notFound">
