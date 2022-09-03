@@ -15,7 +15,7 @@ export default function Home() {
 
       <h1 style={{textAlign:"center"}} >Welcom to Mr Rustin.com</h1>
       <h2 style={{textAlign:"center"}} >Something awesome is brewing in the labs right now 🧪🔬😎 </h2>
-      <div style={{textAlign:"center"}} ><Image src={LabGif} width={400} height={400}/></div>
+      <div style={{textAlign:"center"}} ><Image src={LabGif} width={400} height={400} alt="..." /></div>
 
     </div>
   )
