@@ -6,9 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@reach/rect": "^0.18.0",
+    "classnames": "^2.3.2",
     "framer-motion": "^8.5.2",
     "next": "latest",
     "react": "18.2.0",
+    "react-cool-inview": "^3.0.1",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
