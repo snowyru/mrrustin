@@ -1,4 +1,5 @@
 'use client'
+import Navbar from '../components/navbar';
 
 export default function RootLayout({
   children,
@@ -8,12 +9,17 @@ export default function RootLayout({
 
   return (
     <html>
-      <nav>Navbar</nav>
-      <head />
-      <body>{children}</body>
-      <footer>
-        <h3 className="pt-3">Footer</h3>
-      </footer>
+      <body>
+        <main>
+          <nav>
+            <Navbar/>
+          </nav>
+          {children}
+          <footer>
+            <h3 className='text-3xl font-bold underline'>Footer</h3>
+          </footer>
+        </main>
+      </body>
     </html>
   )
 }
