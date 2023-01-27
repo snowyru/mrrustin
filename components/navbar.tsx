@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
 import cn from 'classnames';
 import MobileMenu from './MobileMenu';
+import '../styles/globals.css';
 
 function NavSlots({href,text}){
     const path = usePathname();
