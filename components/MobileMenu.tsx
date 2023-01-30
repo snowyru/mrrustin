@@ -3,11 +3,17 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import '../styles/globals.css';
 import styles from 'styles/mobile-menu.module.css';
+import useDelayedRender from 'use-delayed-render';
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isMenuMounted, setIsMenuMountedIn] = useState(false);
-    const [isMenuRendered, setIsMenuRendered] = useState(false);
+  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
+    isMenuOpen,
+    {
+      enterDelay: 20,
+      exitDelay: 300
+    }
+  );
 
   function toggleMenu() {
     if (isMenuOpen) {
@@ -56,32 +62,32 @@ export default function MobileMenu() {
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '175ms' }}
           >
-            <Link href="/guestbook" className="flex w-auto pb-4">
-              Guestbook
+            <Link href="/about" className="flex w-auto pb-4">
+              About
             </Link>
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '200ms' }}
           >
-            <Link href="/dashboard" className="flex w-auto pb-4">
-              Dashboard
+            <Link href="/time" className="flex w-auto pb-4">
+              Time Machine
             </Link>
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '250ms' }}
           >
-            <Link href="/blog" className="flex w-auto pb-4">
-              Blog
+            <Link href="/guestbook" className="flex w-auto pb-4">
+              Guestbook
             </Link>
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '275ms' }}
           >
-            <Link href="/snippets" className="flex w-auto pb-4">
-              Snippets
+            <Link href="/blog" className="flex w-auto pb-4">
+              Blog
             </Link>
           </li>
           <li

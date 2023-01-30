@@ -32,7 +32,6 @@ export default function Navbar(props){
     const { resolvedTheme, setTheme } = useTheme();
 
     useEffect(() => setMounted(true), []);
-
     const { children, ...customMeta } = props;
     const router = useRouter();
     const meta = {
@@ -53,10 +52,10 @@ export default function Navbar(props){
           <div className="ml-[-0.60rem]">
             <MobileMenu />
             <NavSlots href="/" text="Home" />
+            <NavSlots href="/about" text="About" />
+            <NavSlots href="/time" text="Time Machine" />
             <NavSlots href="/guestbook" text="Guestbook" />
-            <NavSlots href="/dashboard" text="Dashboard" />
             <NavSlots href="/blog" text="Blog" />
-            <NavSlots href="/snippets" text="Snippets" />
           </div>
           <button
             aria-label="Toggle Dark Mode"
