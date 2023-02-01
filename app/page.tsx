@@ -29,7 +29,7 @@ export default function HomePage() {
                         alt="Lee Robinson"
                         height={176}
                         width={176}
-                        src=""
+                        src="/../public/image_2023-02-01_101926146-new.png"
                         sizes="30vw"
                         priority
                         className="rounded-full filter grayscale"
