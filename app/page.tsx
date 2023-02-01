@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import profilePic from './profilePic.png';
 
 export default function HomePage() {
 
@@ -29,7 +30,7 @@ export default function HomePage() {
                         alt="Lee Robinson"
                         height={176}
                         width={176}
-                        src="/../public/image_2023-02-01_101926146-new.png"
+                        src={profilePic}
                         sizes="30vw"
                         priority
                         className="rounded-full filter grayscale"
