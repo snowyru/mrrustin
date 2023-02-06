@@ -14,11 +14,11 @@ export default function HomePage() {
                 <div className="flex flex-col-reverse sm:flex-row items-start">
                     <div className="flex flex-col pr-8">
                     <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
-                        Lee Robinson
+                        Shahied Rustin
                     </h1>
                     <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                        VP of Developer Experience at{' '}
-                        <span className="font-semibold">Vercel</span>
+                        Tech enthusiast :{' '}
+                        <span className="font-semibold">Mr Rustin</span>
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 mb-16">
                         Helping developers build a faster web. Teaching about web
