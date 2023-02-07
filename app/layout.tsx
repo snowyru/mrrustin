@@ -17,7 +17,7 @@ export default function RootLayout({
           </nav>
           {children}
           <footer>
-            <h3 className='text-3xl font-bold underline'>Footer</h3>
+            <h3 className=''>~end~</h3>
           </footer>
         </main>
       </body>
