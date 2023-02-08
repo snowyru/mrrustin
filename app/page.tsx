@@ -37,7 +37,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 mb-16">
-                        "A thriving web developer and accomplished IT manager, possesses a passion for technology and a dedication to helping others. Shahied brings a wealth of knowledge and expertise to the table, delivering innovative solutions that drive success for both individuals and organizations alike. Whether working with clients or leading a team, Shahied approaches every task with professionalism, determination, and a drive to succeed." - ChatGPT
+                        "Shahied, A thriving web developer and accomplished IT manager, possesses a passion for technology and a dedication to helping others. Shahied brings a wealth of knowledge and expertise to the table, delivering innovative solutions that drive success for both individuals and organizations alike. Whether working with clients or leading a team, Shahied approaches every task with professionalism, determination, and a drive to succeed." - ChatGPT
                     </p>
                 <h3 className="font-bold decoration-lime-500 underline decoration-2 underline-offset-4 text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
                     Featured Posts
