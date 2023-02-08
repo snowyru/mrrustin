@@ -10,10 +10,10 @@ export default function HomePage() {
 
     return (
         <Suspense fallback={null}>
-            <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
+            <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:bg-black dark:border-gray-700 mx-auto pb-16">
                 <div className="flex flex-col-reverse sm:flex-row items-start">
                     <div className="flex flex-col pr-8">
-                    <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+                    <h1 className="font-bold pt-5 decoration-lime-500 underline decoration-2 underline-offset-4 text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
                         Shahied Rustin
                     </h1>
                     <h2 className="text-gray-700 dark:text-gray-200 mb-4">
@@ -21,11 +21,10 @@ export default function HomePage() {
                         <span className="font-semibold">Mr Rustin</span>
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 mb-16">
-                        Helping developers build a faster web. Teaching about web
-                        development, serverless, and React / Next.js.
+                        Hi I'm Shahied, a student at CPUT. Currently, a full stack web developer and IT specialist. Nice to meet you 🤝
                     </p>
                     </div>
-                    <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
+                    <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto pt-5">
                     <Image
                         alt="Lee Robinson"
                         height={176}
@@ -37,8 +36,10 @@ export default function HomePage() {
                     />
                     </div>
                 </div>
-
-                <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+                <p className="text-gray-600 dark:text-gray-400 mb-16">
+                        "A thriving web developer and accomplished IT manager, possesses a passion for technology and a dedication to helping others. Shahied brings a wealth of knowledge and expertise to the table, delivering innovative solutions that drive success for both individuals and organizations alike. Whether working with clients or leading a team, Shahied approaches every task with professionalism, determination, and a drive to succeed." - ChatGPT
+                    </p>
+                <h3 className="font-bold decoration-lime-500 underline decoration-2 underline-offset-4 text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
                     Featured Posts
                 </h3>
                 <div className="flex gap-6 flex-col md:flex-row">
@@ -67,7 +68,7 @@ export default function HomePage() {
                     </>
                 </Link>
 
-                <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+                <h3 className="font-bold decoration-lime-500 underline decoration-2 underline-offset-4 text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
                     Learn React & Next.js
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
