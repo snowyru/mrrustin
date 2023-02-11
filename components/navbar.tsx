@@ -35,9 +35,9 @@ export default function Navbar(props){
     const { children, ...customMeta } = props;
     const router = useRouter();
     const meta = {
-      title: 'Lee Robinson – Developer, writer, creator.',
+      title: 'Shahied Rustin – Developer, writer, creator.',
       description: `Front-end developer, JavaScript enthusiast, and course creator.`,
-      image: 'https://leerob.io/static/images/lee-banner.png',
+      image: '',
       type: 'website',
       ...customMeta
     };
