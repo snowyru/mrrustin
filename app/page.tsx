@@ -26,7 +26,7 @@ export default function HomePage() {
                     </div>
                     <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto pt-5">
                     <Image
-                        alt="Lee Robinson"
+                        alt="Shahied Rustin"
                         height={176}
                         width={176}
                         src={profilePic}
