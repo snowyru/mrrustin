@@ -13,7 +13,7 @@ export default function HomePage() {
                 <div className="flex flex-col-reverse sm:flex-row items-start">
                     <div className="flex flex-col pr-8 sm:text-left">
                     <h1 className="font-bold pt-5 decoration-lime-500 underline decoration-2 underline-offset-4 text-3xl md:text-5xl tracking-tight transistion-all mb-1 text-black dark:text-white">
-                        Shahied Rustin
+                        Shahied Rustin (This website is still in development)
                     </h1>
                     <h2 className="text-gray-700 dark:text-gray-200 mb-4">
                         Tech enthusiast :{' '}

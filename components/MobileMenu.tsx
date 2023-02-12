@@ -3,24 +3,22 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import '../styles/globals.css';
 import styles from 'styles/mobile-menu.module.css';
-import useDelayedRender from 'use-delayed-render';
+import { motion } from 'framer-motion';
+import winghi from './winghi.png';
+import Image from 'next/image';
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
-    isMenuOpen,
-    {
-      enterDelay: 20,
-      exitDelay: 300
-    }
-  );
+  const [isMenuMounted, setIsMenuMounted] = useState(false);
 
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
+      setIsMenuMounted(false);
       document.body.style.overflow = '';
     } else {
       setIsMenuOpen(true);
+      setIsMenuMounted(true);
       document.body.style.overflow = 'hidden';
     }
   }
@@ -43,54 +41,30 @@ export default function MobileMenu() {
         <CrossIcon data-hide={!isMenuOpen} />
       </button>
       {isMenuMounted && (
-        <ul
-          className={cn(
-            styles.menu,
-            'flex flex-col absolute bg-gray-100 dark:bg-gray-900',
-            isMenuRendered && styles.menuRendered
-          )}
-        >
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: '150ms' }}
-          >
-            <Link href="/" className="flex w-auto pb-4">
-              Home
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: '175ms' }}
-          >
-            <Link href="/about" className="flex w-auto pb-4">
-              About
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: '200ms' }}
-          >
-            <Link href="/time" className="flex w-auto pb-4">
-              Time Machine
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: '250ms' }}
-          >
-            <Link href="/guestbook" className="flex w-auto pb-4">
-              Guestbook
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: '275ms' }}
-          >
-            <Link href="/blog" className="flex w-auto pb-4">
-              Blog
-            </Link>
-          </li>
-        </ul>
+        <motion.div className='p-5 m-[-4vw] float-left block overflow-visible bg-red-500 absolute z-50'
+          style={{width:"70%", height:"auto"}}
+         >
+          <motion.div className='rounded-r-full w-[100%] relative p-5 bg-blue-500'
+            style={{}}
+           ><Image src={winghi} sizes="100vw" fill alt="wing" className=""/>
+          </motion.div>
+          <motion.div className='rounded-r-full w-[90%] relative p-5 bg-blue-500'
+            style={{}}
+           ><Image src={winghi} sizes="100vw" fill alt="wing" className=""/>
+          </motion.div>
+          <motion.div className='rounded-r-full w-[80%] relative p-5 bg-blue-500'
+            style={{}}
+           ><Image src={winghi} sizes="100vw" fill alt="wing" className=""/>
+          </motion.div>
+          <motion.div className='rounded-r-full w-[70%] relative p-5 bg-blue-500'
+            style={{}}
+           ><Image src={winghi} sizes="100vw" fill alt="wing" className=""/>
+          </motion.div>
+          <motion.div className='rounded-r-full w-[60%] relative p-5 bg-blue-500'
+            style={{}}
+           ><Image src={winghi} sizes="100vw" fill alt="wing" className=""/>
+          </motion.div>
+        </motion.div>
       )}
     </>
   );
