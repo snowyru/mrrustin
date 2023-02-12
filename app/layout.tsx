@@ -1,15 +1,13 @@
 'use client'
 import '../styles/globals.css';
 import Navbar from '../components/navbar';
-import { ThemeProvider, useTheme } from 'next-themes';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { ThemeProvider } from 'next-themes';
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}, dark: boolean) {
+}) {
 
   return (
     <html>
