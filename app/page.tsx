@@ -9,9 +9,9 @@ export default function HomePage() {
 
     return (
         <Suspense fallback={null}>
-            <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:bg-black dark:border-gray-700 mx-auto transistion-all pb-16">
+            <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:bg-black dark:border-gray-700 mx-auto transistion-all pb-16 p-5 md:p-0 ">
                 <div className="flex flex-col-reverse sm:flex-row items-start">
-                    <div className="flex flex-col pr-8">
+                    <div className="flex flex-col pr-8 sm:text-left">
                     <h1 className="font-bold pt-5 decoration-lime-500 underline decoration-2 underline-offset-4 text-3xl md:text-5xl tracking-tight transistion-all mb-1 text-black dark:text-white">
                         Shahied Rustin
                     </h1>
@@ -23,7 +23,7 @@ export default function HomePage() {
                         Hi I'm Shahied, electronic⚡ / computer💻 engineer student at <a className="text-blue-700  dark:text-blue-300" target="_blank" href="https://www.cput.ac.za" >CPUT🎓</a>. Currently, a full stack web developer and IT specialist. Nice to meet you 🤝
                     </p>
                     </div>
-                    <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto pt-5">
+                    <div className="w-[200px] sm:inset-0 inset-x-1/3 sm:w-[176px] relative mb-8 sm:mb-0 mr-auto pt-5">
                     <Image
                         alt="Shahied Rustin"
                         height={176}
@@ -73,7 +73,7 @@ export default function HomePage() {
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                     Check out my YouTube Channel ▶️
                 </p>
-                <iframe width="686" height="386" src="https://www.youtube.com/embed/bfresXpwGw8" title="Noordhoek beach" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                {/* <iframe width="686" height="386" src="https://www.youtube.com/embed/bfresXpwGw8" title="Noordhoek beach" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
                 </div>
         </Suspense>
     );
