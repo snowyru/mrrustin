@@ -2,7 +2,7 @@
 import '../styles/globals.css';
 import Navbar from '../components/navbar';
 import { ThemeProvider, useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function RootLayout({
@@ -13,8 +13,6 @@ export default function RootLayout({
 
   const { resolvedTheme, setTheme } = useTheme();
   setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
-  const [isDark, setIsDark] = useState(false);
-  // setIsDark(dark);
 
   const darkTransition = {
     darkMode: {
@@ -32,7 +30,7 @@ export default function RootLayout({
           <motion.div 
           variants={darkTransition}
           initial={'lightMode'}
-          animate={isDark ? 'darkMode' : 'lightMode'} >
+          animate={'darkMode'} >
             <main>
               <nav>
                 <Navbar/>
