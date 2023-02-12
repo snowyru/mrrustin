@@ -8,6 +8,10 @@
   }
 }
 
+body * {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
 ::selection {
     background-color: #47a3f3;
     color: #fefefe;
@@ -38,14 +42,6 @@
     display: table;
   }
   
-  .skip-nav {
-    @apply absolute px-4 py-3 transition-transform duration-200 transform -translate-y-12 -left-1/4 focus:top-4 focus:translate-y-3 -top-8;
-  }
-  
-  #skip {
-    scroll-margin-top: 1.125rem;
-  }
-  
   @supports not (backdrop-filter: none) {
     .sticky-nav {
       backdrop-filter: none;
@@ -67,9 +63,9 @@
     @apply visible;
   }
   
-  .prose a {
+  /* .prose a {
     @apply transition-all;
-  }
+  } */
   
   .prose .anchor:after {
     @apply text-gray-300 dark:text-gray-700;
