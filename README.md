@@ -1,27 +1,25 @@
-# Next.js + Tailwind CSS Example
+# 🏛️ MrRustin (Legacy Portfolio)
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+> **⚠️ ARCHIVED PROJECT:** This repository contains the source code for the original *Rustin Systems* portfolio website (v1). It has been superseded by the current platform at [rustinsystems.com](https://rustinsystems.com).
 
-## Deploy your own
+## 📖 Historical Context
+Before re-branding to the enterprise identity **Rustin Systems**, this project served as my personal portfolio and blog under the moniker "MrRustin." It represents my early exploration into modern web frameworks and reactive UI design.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+This codebase is preserved here to demonstrate my progression in full-stack development and infrastructure deployment.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## 🛠️ Technical Stack (v1)
+* **Framework:** [Next.js](https://nextjs.org/) (React)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Deployment:** Vercel
 
-## How to use
+## 🚀 Evolution
+This project was the foundation for my current engineering philosophy: **"Bridging Hardware Constraints & Software Architecture."**
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+* **Current Active Portfolio:** [rustinsystems.com](https://rustinsystems.com)
+* **Main GitHub Profile:** [github.com/rustinsystems](https://github.com/rustinsystems)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+---
+<div align="center">
+  <p><i>Managed by <a href="https://rustinsystems.com">Rustin Systems</a></i></p>
+  <p>Archived for historical reference.</p>
+</div>
